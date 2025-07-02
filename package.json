@@ -1,0 +1,31 @@
+{
+  "name": "ts-walmart-poc",
+  "version": "1.0.0",
+  "description": "Node.js-based proof-of-concept project for automating form submissions using Playwright",
+  "main": "parser.js",
+  "scripts": {
+    "parse": "node parser.js",
+    "serve": "npx serve .",
+    "automate": "node autoSubmit.js",
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test --ui",
+    "test:headed": "npx playwright test --headed"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "form-submission",
+    "csv-parser"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "csv-parser": "^3.0.0",
+    "csv-writer": "^1.6.0",
+    "playwright": "^1.40.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.53.2",
+    "serve": "^14.2.1"
+  }
+}
